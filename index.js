@@ -7,8 +7,10 @@ const server = http.createServer((request, response) => {
 
   // bikin rute untuk url "/" dengan method "GET"
   if (request.url === "/") {
-    response.write("Ini adalah homepage");
-    response.end();
+    response.write("sesuatu");
+    // kalau tidak memberikan response.end, maka setiap request yang terjadi tidak akan berhenti di server, karena di server tidak memberitahu kapan untuk berhenti. Kalaupun request berhenti, itu karena RTO Request TimeOut
+    // ibaratnya kaya di kacangin
+    response.end()
   }
 
   // bikin rute untuk url "/me" dengan method "GET"
