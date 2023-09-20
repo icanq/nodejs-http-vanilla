@@ -1,0 +1,17 @@
+{
+  "name": "server-vanilla",
+  "version": "0.0.7",
+  "description": "server vanilla",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "keywords": [
+    "nodejs",
+    "http"
+  ],
+  "author": "icanq",
+  "license": "ISC"
+}
