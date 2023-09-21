@@ -4,6 +4,7 @@ const http = require('http');
 // fs adalah module bawaan dari node.js yang digunakan untuk membaca file, atau menulis file.
 const fs = require('fs');
 
+// untuk membuka si server biar bisa menangani sebuah request
 const server = http.createServer((request, response) => {
   // kita ingin menangani setiap request yang masuk melalui endpoint atau rute "/" kita akan memberikan response berupa file html, yaitu index.html yang berada pada folder public. 
 
@@ -44,7 +45,7 @@ const server = http.createServer((request, response) => {
   }
   
 })
-
+// membuka server pada PORT berapa
 const PORT = 3000;
 server.listen(PORT, () => {
   console.log(`Server sedang berjalan pada url dan port http://localhost:${PORT}`)
